@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media(max-width: 460px) {
+    padding: 0 2rem;
+  }
+
+  div {
+    display: flex;
+    gap: 8px;
+    font-weight: 700;
+    // border: 1px solid purple;
+
+    @media(max-width: 400px) {
+      flex-direction: column;
+    }
+
+    p {
+      font-size: .875rem;
+      line-height: 1.6;
+      display: flex;
+      justify-content: flex-start;
+
+      @media(max-width: 460px) {
+        
+      }
+    }
+
+    .tasksCreated, .tasksDone {
+      padding: 2px 8px;
+      background: var(--gray-400);
+      border-radius: 999px;
+      font-size: .75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-200);
+    }
+  }
+
+  div:first-child {
+    p {
+      color: var(--blue-300);
+    }
+  }
+  div:last-child {
+    p {
+      color: var(--purple-500);
+    }
+  }
+}
+
+.taskContainer {
+  margin-top: 1.5rem;
+
+  @media(max-width: 460px) {
+    padding: 0 2rem;
+  }
+}
+
